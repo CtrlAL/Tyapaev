@@ -22,16 +22,21 @@ namespace First
 			return a;
 		}
 
-		private static IEnumerable<int> GetSeq(Func<int, int, int, int> evolution)
+		private static IEnumerable<int> GetSeq(Func<int, int, int, int> evolution, int a, int n)
 		{
-			var ints = new List<int>();
+			var ints = Enumerable.Range(1, n).ToList();
+
+			foreach (var num in ints)
+			{
+				if (GCD(num, n) != 1)
+				{
+					ints.Remove(num);
+				}
+			}
+
+			ints = ints.Select(x => evolution(a,x,n)).ToList();
 
 			return ints;
-		}
-
-		private static int GetSeqT(IEnumerable<int> seq)
-		{
-			return 1;
 		}
 
 		private static Func<int, int, int, int> Evolution = (a, x, n) => a * (x % n); 
@@ -47,15 +52,15 @@ namespace First
 			{
 				
 				decimal result = default;
-				
-				int t = 1;
 				int n = (m.Value % 47) + 47;
-				var x = Enumerable.Range(0, t).ToArray();
-				foreach (var index in Enumerable.Range(1, t))
-				{
-					result += (x[index] * x[index]);
-				}
+				var seq = GetSeq(Evolution, 1, n).ToList();
 
+				foreach (var x in seq)
+				{
+					result += x * x;
+				}
+				//Quad sum divide by Fi(n); Is Correct , now is trash
+				Console.WriteLine(result * seq.Count);
 			}
 		}
 	}
