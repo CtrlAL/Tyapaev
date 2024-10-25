@@ -1,0 +1,15 @@
+C:\Larcev\Univesity\Tyapaev\2\bin\Debug\net8.0\2.exe
+C:\Larcev\Univesity\Tyapaev\2\bin\Debug\net8.0\2.deps.json
+C:\Larcev\Univesity\Tyapaev\2\bin\Debug\net8.0\2.runtimeconfig.json
+C:\Larcev\Univesity\Tyapaev\2\bin\Debug\net8.0\2.dll
+C:\Larcev\Univesity\Tyapaev\2\bin\Debug\net8.0\2.pdb
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\2.AssemblyInfoInputs.cache
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\2.AssemblyInfo.cs
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\2.csproj.CoreCompileInputs.cache
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\2.sourcelink.json
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\2.dll
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\refint\2.dll
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\2.pdb
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\2.genruntimeconfig.cache
+C:\Larcev\Univesity\Tyapaev\2\obj\Debug\net8.0\ref\2.dll
