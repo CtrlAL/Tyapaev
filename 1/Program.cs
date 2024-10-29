@@ -21,8 +21,8 @@ namespace First
 			}
 			return a;
 		}
-
-		private static IEnumerable<int> GetSeq(Func<int, int, int, int> evolution, int a, int n)
+		private static Func<int, int, int, int> Evolution = (a, x, n) => a * (x % n);
+		private static IEnumerable<int> GetGroup(int n)
 		{
 			var ints = Enumerable.Range(1, n).ToList();
 
@@ -34,13 +34,28 @@ namespace First
 				}
 			}
 
-			ints = ints.Select(x => evolution(a,x,n)).ToList();
-
 			return ints;
 		}
 
-		private static Func<int, int, int, int> Evolution = (a, x, n) => a * (x % n); 
-	
+		private static IEnumerable<int> GetOrbit(Func<int, int, int, int> evolution, int a, int n)
+		{
+			var ints = new List<int>();
+
+			List<int> Func(int x , List<int> ints)
+			{
+				ints.Append(a);
+				x = evolution(a, x, n);
+
+				if (!ints.Contains(x))
+				{
+					return Func(x, ints);				
+				}
+				return ints;
+			}
+
+			return Func(1, ints);
+		}
+
 		static Program(){
 			var text = File.ReadAllText("..\\..\\..\\config.json");
 			var settings = JsonConvert.DeserializeObject<Settings>(text);
@@ -48,19 +63,35 @@ namespace First
 		}
 		static void Main(string[] args)
 		{
+			decimal S = default;
+			decimal R = 0;
 			if (m != null)
 			{
-				
-				decimal result = default;
 				int n = (m.Value % 47) + 47;
-				var seq = GetSeq(Evolution, 1, n).ToList();
+				int a = default;
+				var group = GetGroup(n).ToList();
+				int t = group.Count();
 
-				foreach (var x in seq)
+				if (int.TryParse(Console.ReadLine(), out a))
 				{
-					result += x * x;
+					if (GCD(a,n) == 1)
+					{
+						var orbit = GetOrbit(Evolution, a, n).ToList();
+						int fn = orbit.Count();
+
+						for (int i = 0; i < orbit.Count() -1; i++)
+						{
+							R += (group.IndexOf(orbit[i]) - group.IndexOf(orbit[i + 1])) 
+								* (group.IndexOf(orbit[i]) - group.IndexOf(orbit[i + 1]));
+						}
+
+						R += (group.Count() - group.IndexOf(orbit.Last()))
+								* (group.Count() - group.IndexOf(orbit.Last()));
+
+						S = (R * t) / (fn * fn);
+						Console.WriteLine(S);
+					}
 				}
-				//Quad sum divide by Fi(n); Is Correct , now is trash
-				Console.WriteLine(result * seq.Count);
 			}
 		}
 	}
