@@ -6,24 +6,61 @@ namespace Second
 {
 	public class Program
 	{
-		private static int? m;
-
-		private record Settings
+		public static void CheckBiectivivy(IEnumerable<(int coefficient, int degree)> polly)
 		{
-			public int? m { get; set; }
+			var resultList = new List<int>();
+
+			foreach (var num in Enumerable.Range(0, 3))
+			{
+				int result = 0;
+
+				foreach (var item in polly)
+				{
+					result += item.coefficient * (int)MathF.Pow(num, item.degree);
+					result %= 4;
+				}
+
+				resultList.Add(result);
+			}
+
+			if (resultList.Distinct().Count() == 4)
+			{
+				Console.WriteLine("f(x) Биективна");
+			}
+			else
+			{
+				Console.WriteLine("f(x) Не Биективна");
+			}
 		}
-
-		static Program()
+		public static void CheckTransitivity(IEnumerable<(int coefficient, int degree)> polly)
 		{
-			var text = File.ReadAllText("..\\..\\..\\config.json");
-			var settings = JsonConvert.DeserializeObject<Settings>(text);
-			m = settings?.m;
+			var resultList = new List<int>();
+
+			foreach (var num in Enumerable.Range(0, 7))
+			{
+				int result = 0;
+
+				foreach (var item in polly)
+				{
+					result += item.coefficient * (int)MathF.Pow(num, item.degree);
+					result %= 8;
+				}
+
+				resultList.Add(result);
+			}
+
+			if (resultList.Distinct().Count() == 8)
+			{
+				Console.WriteLine("f(x) Транзитивна");
+			}
+			else
+			{
+				Console.WriteLine("f(x) Не Транизитивна");
+			}
 		}
 
 		static void Main(string[] args)
 		{
-
-			
 			var fx = new List<(int coefficient, int degree)>()
 			{
 				(12, 0),
@@ -85,7 +122,7 @@ namespace Second
 					{
 						var res = resList.Peek() - a;
 
-						if ((int)res.Denominator % 2 == 0)
+						if ((int)res.Numerator % 2 == 0)
 						{
 							coefficentZ2.Add(a);
 							resList.Push(res);
@@ -97,7 +134,7 @@ namespace Second
 				var value = 0;
 
 				for (int i = 0; i < 2; i++) {
-					if (coefficentZ2[i] == 1)
+					if (coefficentZ2[i % coefficentZ2.Count()] == 1)
 					{
 						value += (int)MathF.Pow(2, i);
 					}
@@ -111,18 +148,7 @@ namespace Second
 
 			var gMod8 = gx.Select(item =>
 			{
-				if ((int)item.coefficient.Numerator % (int)item.coefficient.Denominator == 0)
-				{
-					item.coefficient = (int)item.coefficient.Numerator % (int)item.coefficient.Denominator;
-					return item;
-				}
-
-				//P is 2
-				//r is Numerator
-				//s is Denumerator
-				//R is Numerator % 2 == 0
-				//A is 1 or 0
-
+				int p = 2;
 				var A = new List<int> { 0, 1 };
 				var coefficentZ2 = new List<int>();
 				var resList = new Stack<Fraction>();
@@ -147,7 +173,7 @@ namespace Second
 
 				for (int i = 0; i < 3; i++)
 				{
-					if (coefficentZ2[i] == 1)
+					if (coefficentZ2[i%coefficentZ2.Count()] == 1)
 					{
 						value += (int)MathF.Pow(2, i);
 					}
@@ -159,59 +185,18 @@ namespace Second
 			});
 
 
-			foreach(var num in Enumerable.Range(0,8))
+			CheckBiectivivy(fMod4);
+			CheckBiectivivy(gMod4.Select(item =>
 			{
-				var resultList = new List<int>();
+				return ((int)item.coefficient, item.degree);
+			}));
 
-				foreach (var item in fMod4)
-				{
-					resultList.Add((item.coefficient * (int)MathF.Pow(num, item.degree))%4);
-				}
-
-				if(resultList.Distinct().Count() == 4)
-				{
-					Console.WriteLine("f(x) Биективна");
-				}
-
-				resultList.Clear();
-
-				foreach (var item in gMod4)
-				{
-					resultList.Add(((int)item.coefficient * (int)MathF.Pow(num, item.degree)) % 8);
-				}
-
-				if (resultList.Distinct().Count() == 8)
-				{
-					Console.WriteLine("g(x) Транзитивна");
-				}
-			}
-
-			foreach(var num in Enumerable.Range(0,8))
+			CheckTransitivity(fMod8);
+			CheckTransitivity(gMod8.Select(item =>
 			{
-				var resultList = new List<int>();
+				return ((int)item.coefficient, item.degree);
+			}));
 
-				foreach (var item in fMod8)
-				{
-					resultList.Add((item.coefficient * (int)MathF.Pow(num, item.degree)) % 4);
-				}
-
-				if (resultList.Distinct().Count() == 4)
-				{
-					Console.WriteLine("f(x) Биективна");
-				}
-
-				resultList.Clear();
-
-				foreach (var item in gMod8)
-				{
-					resultList.Add(((int)item.coefficient * (int)MathF.Pow(num, item.degree)) % 4);
-				}
-
-				if (resultList.Distinct().Count() == 8)
-				{
-					Console.WriteLine("g(x) Транзитивна");
-				}
-			}
 		}
 	}
 }
