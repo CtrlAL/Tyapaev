@@ -3,12 +3,31 @@
   "WorkspaceRootPath": "C:\\Larcev\\Univesity\\Tyapaev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B656AD7D-965A-4FB1-8A67-8E0B16F76C13}|1\\1.csproj|c:\\larcev\\univesity\\tyapaev\\1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B656AD7D-965A-4FB1-8A67-8E0B16F76C13}|1\\1.csproj|solutionrelative:1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8072A82C-9BCA-459D-ACF5-9927367C2031}|2\\2.csproj|c:\\larcev\\univesity\\tyapaev\\2\\2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8072A82C-9BCA-459D-ACF5-9927367C2031}|2\\2.csproj|solutionrelative:2\\2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:3\\ConsoleApp1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8072A82C-9BCA-459D-ACF5-9927367C2031}|2\\2.csproj|c:\\larcev\\univesity\\tyapaev\\2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8072A82C-9BCA-459D-ACF5-9927367C2031}|2\\2.csproj|solutionrelative:2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B656AD7D-965A-4FB1-8A67-8E0B16F76C13}|1\\1.csproj|c:\\larcev\\univesity\\tyapaev\\1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B656AD7D-965A-4FB1-8A67-8E0B16F76C13}|1\\1.csproj|solutionrelative:1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sp1\\AppData\\Local\\SourceServer\\78ee0f90ea3a04ac89f30e9783e9dc866a87be62589e6273892f681e5d15b9a5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Collections\\Generic\\List.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\Properties\\AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:3\\ConsoleApp1\\Properties\\AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:3\\ConsoleApp1\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,37 +37,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Larcev\\Univesity\\Tyapaev\\2\\Program.cs",
-              "RelativeDocumentMoniker": "2\\Program.cs",
-              "ToolTip": "C:\\Larcev\\Univesity\\Tyapaev\\2\\Program.cs",
-              "RelativeToolTip": "2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T14:49:54.628Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "3\\ConsoleApp1\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "3\\ConsoleApp1\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:12:54.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\App.config",
+              "RelativeDocumentMoniker": "3\\ConsoleApp1\\App.config",
+              "ToolTip": "C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\App.config",
+              "RelativeToolTip": "3\\ConsoleApp1\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-05T14:12:44.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "3\\ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\Larcev\\Univesity\\Tyapaev\\3\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "3\\ConsoleApp1\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:12:11.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "List.cs",
+              "DocumentMoniker": "C:\\Users\\sp1\\AppData\\Local\\SourceServer\\78ee0f90ea3a04ac89f30e9783e9dc866a87be62589e6273892f681e5d15b9a5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Collections\\Generic\\List.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\sp1\\AppData\\Local\\SourceServer\\78ee0f90ea3a04ac89f30e9783e9dc866a87be62589e6273892f681e5d15b9a5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Collections\\Generic\\List.cs",
+              "ToolTip": "C:\\Users\\sp1\\AppData\\Local\\SourceServer\\78ee0f90ea3a04ac89f30e9783e9dc866a87be62589e6273892f681e5d15b9a5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Collections\\Generic\\List.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\sp1\\AppData\\Local\\SourceServer\\78ee0f90ea3a04ac89f30e9783e9dc866a87be62589e6273892f681e5d15b9a5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Collections\\Generic\\List.cs",
+              "ViewState": "AgIAAMYBAAAAAAAAAAAAAJUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T12:51:53.694Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "2.csproj",
+              "DocumentMoniker": "C:\\Larcev\\Univesity\\Tyapaev\\2\\2.csproj",
+              "RelativeDocumentMoniker": "2\\2.csproj",
+              "ToolTip": "C:\\Larcev\\Univesity\\Tyapaev\\2\\2.csproj",
+              "RelativeToolTip": "2\\2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-05T10:03:14.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Larcev\\Univesity\\Tyapaev\\2\\Program.cs",
+              "RelativeDocumentMoniker": "2\\Program.cs",
+              "ToolTip": "C:\\Larcev\\Univesity\\Tyapaev\\2\\Program.cs",
+              "RelativeToolTip": "2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:49:54.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Larcev\\Univesity\\Tyapaev\\1\\Program.cs",
               "RelativeDocumentMoniker": "1\\Program.cs",
               "ToolTip": "C:\\Larcev\\Univesity\\Tyapaev\\1\\Program.cs",
               "RelativeToolTip": "1\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADEAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAD4AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T13:41:17.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T13:41:17.078Z"
             }
           ]
         }
