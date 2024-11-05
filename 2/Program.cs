@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using Fractions;
+using System.ComponentModel.DataAnnotations;
 
 namespace Second
 {
@@ -10,7 +11,7 @@ namespace Second
 		{
 			var resultList = new List<int>();
 
-			foreach (var num in Enumerable.Range(0, 3))
+			foreach (var num in Enumerable.Range(0, 4))
 			{
 				int result = 0;
 
@@ -36,7 +37,7 @@ namespace Second
 		{
 			var resultList = new List<int>();
 
-			foreach (var num in Enumerable.Range(0, 7))
+			foreach (var num in Enumerable.Range(0, 8))
 			{
 				int result = 0;
 
@@ -74,12 +75,6 @@ namespace Second
 				(new Fraction(7,11), 0),
 			};
 
-			var gDeg = new List<Fraction>()
-			{
-				new Fraction(9,7),
-				new Fraction(7,11),
-			};
-
 			var fMod4 = fx.Select( item =>
 			{
 				if (item.coefficient > 0)
@@ -110,6 +105,15 @@ namespace Second
 				
 			var gMod4 = gx.Select(item =>
 			{
+				(int coefficient, int degree) result;
+
+				if ((int)item.coefficient.Numerator % (int)item.coefficient.Denominator == 0)
+				{
+					int intValue = ((int)item.coefficient.Numerator % (int)item.coefficient.Denominator) % 4;
+					result = (intValue, item.degree);
+					return result;
+				}
+
 				int p = 2;
 				var A = new List<int>{0 , 1};
 				var coefficentZ2 = new List<int>();
@@ -140,14 +144,23 @@ namespace Second
 					}
 				}
 
-				item.coefficient = value;
+				result = (value, item.degree);
 
-				return item;
+				return result;
 			});
 
 
 			var gMod8 = gx.Select(item =>
 			{
+				(int coefficient, int degree) result;
+
+				if ((int)item.coefficient.Numerator % (int)item.coefficient.Denominator == 0)
+				{
+					var intValue = ((int)item.coefficient.Numerator % (int)item.coefficient.Denominator) % 8;
+					result = (intValue, item.degree);
+					return result;
+				}
+
 				int p = 2;
 				var A = new List<int> { 0, 1 };
 				var coefficentZ2 = new List<int>();
@@ -169,7 +182,7 @@ namespace Second
 					}
 				}
 
-				var value = 0;
+				int value = 0;
 
 				for (int i = 0; i < 3; i++)
 				{
@@ -178,10 +191,9 @@ namespace Second
 						value += (int)MathF.Pow(2, i);
 					}
 				}
+				result = (value, item.degree);
 
-				item.coefficient = value;
-
-				return item;
+				return result;
 			});
 
 
