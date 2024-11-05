@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Xa1pujsSXgU=",
+  "dgSpecHash": "c/JFzpW9dXg=",
   "success": true,
   "projectFilePath": "C:\\Larcev\\Univesity\\Tyapaev\\1\\1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sp1\\.nuget\\packages\\fractions\\8.0.4\\fractions.8.0.4.nupkg.sha512",
     "C:\\Users\\sp1\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []

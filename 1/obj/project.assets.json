@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Fractions/8.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Fractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Fractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -18,6 +31,26 @@
     }
   },
   "libraries": {
+    "Fractions/8.0.4": {
+      "sha512": "YWWSg62+12lhugsSeMeu/gzIZdjN9+r22RBw7iDwvanAIEHxbpxHvoroBKyWLw/tnjMytFmvvEDKBWccjVF8Ew==",
+      "type": "package",
+      "path": "fractions/8.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Fraction.png",
+        "Readme.md",
+        "fractions.8.0.4.nupkg.sha512",
+        "fractions.nuspec",
+        "lib/net8.0/Fractions.dll",
+        "lib/net8.0/Fractions.xml",
+        "lib/netstandard2.0/Fractions.dll",
+        "lib/netstandard2.0/Fractions.xml",
+        "lib/netstandard2.1/Fractions.dll",
+        "lib/netstandard2.1/Fractions.xml",
+        "license.txt"
+      ]
+    },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -51,6 +84,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Fractions >= 8.0.4",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -100,6 +134,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Fractions": {
+            "target": "Package",
+            "version": "[8.0.4, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"

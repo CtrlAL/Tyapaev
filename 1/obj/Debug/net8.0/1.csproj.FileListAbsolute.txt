@@ -13,3 +13,7 @@ C:\Larcev\Univesity\Tyapaev\1\obj\Debug\net8.0\refint\1.dll
 C:\Larcev\Univesity\Tyapaev\1\obj\Debug\net8.0\1.pdb
 C:\Larcev\Univesity\Tyapaev\1\obj\Debug\net8.0\1.genruntimeconfig.cache
 C:\Larcev\Univesity\Tyapaev\1\obj\Debug\net8.0\ref\1.dll
+C:\Larcev\Univesity\Tyapaev\1\bin\Debug\net8.0\Fractions.dll
+C:\Larcev\Univesity\Tyapaev\1\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Larcev\Univesity\Tyapaev\1\obj\Debug\net8.0\1.csproj.AssemblyReference.cache
+C:\Larcev\Univesity\Tyapaev\1\obj\Debug\net8.0\1.csproj.Up2Date
