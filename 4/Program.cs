@@ -14,8 +14,8 @@ namespace Fourth
 		{
 			var k = Enumerable.Range(15, 5);
 
-			var fXDotLists = new List<List<(double x, double y)>>();
-			var hXOfDotLists = new List<List<(double x, double y)>>();
+			var fXDotLists = new List<List<(decimal x, decimal y)>>();
+			var hXOfDotLists = new List<List<(decimal x, decimal y)>>();
 
 			foreach (var kVal in k)
 			{
@@ -27,40 +27,42 @@ namespace Fourth
 
 			foreach (var list in fXDotLists)
 			{
-				var linePlot = new LinePlot { DataSource = list.Select(item => item.y).ToList() };
+				var linePlot = new PointPlot { DataSource = list.Select(item => item.y).ToList() };
 				linePlot.AbscissaData = list.Select(item => item.x).ToList();
 				var surface = new NPlot.Bitmap.PlotSurface2D(400, 300);
 				surface.BackColor = Color.White;
 				surface.Add(linePlot);
 				surface.Title = $"Scatter Plot from a Console Application";
 				surface.Refresh();
-				surface.Bitmap.Save($"nplot-console-quickstart{i}.png");
+				surface.Bitmap.Save($"C:\\Larcev\\Univesity\\Tyapaev\\4\\Plots\\nplot-fx{i}.png");
+				i++;
 			}
 
 			i = 0;
 			foreach (var list in hXOfDotLists)
 			{
-				var linePlot = new LinePlot { DataSource = list.Select(item => item.y) };
-				linePlot.AbscissaData = list.Select(item => item.x);
+				var linePlot = new PointPlot { DataSource = list.Select(item => item.y).ToList() };
+				linePlot.AbscissaData = list.Select(item => item.x).ToList();
 				var surface = new NPlot.Bitmap.PlotSurface2D(400, 300);
 				surface.BackColor = Color.White;
-				//surface.Add(linePlot);
+				surface.Add(linePlot);
 				surface.Title = $"Scatter Plot from a Console Application";
 				surface.Refresh();
-				surface.Bitmap.Save($"nplot-console-quickstart{i}.png");
+				surface.Bitmap.Save($"C:\\Larcev\\Univesity\\Tyapaev\\4\\Plots\\nplot-hx{i}.png");
+				i++;
 			}
 		}
 
-		public static List<(double x, double y)> GetDots(int k, Func<int, int> func)
+		public static List<(decimal x, decimal y)> GetDots(int k, Func<int, int> func)
 		{
-			var dots = new List<(double x, double y)>();
+			var dots = new List<(decimal x, decimal y)>();
 			int rank = (int)MathF.Pow(2, k);
 
 
 			foreach (var i in Enumerable.Range(0, rank))
 			{
-				double xValue = i / rank;
-				double yValue = (func(i) % rank) % rank;
+				decimal xValue = i / (decimal)rank;
+				decimal yValue = (func(i) % rank) / (decimal)rank;
 				dots.Add((xValue, yValue));
 			}
 

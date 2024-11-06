@@ -1,0 +1,10 @@
+C:\Larcev\Univesity\Tyapaev\3\bin\Debug\3.exe.config
+C:\Larcev\Univesity\Tyapaev\3\bin\Debug\3.exe
+C:\Larcev\Univesity\Tyapaev\3\bin\Debug\3.pdb
+C:\Larcev\Univesity\Tyapaev\3\obj\Debug\3.csproj.AssemblyReference.cache
+C:\Larcev\Univesity\Tyapaev\3\obj\Debug\3.csproj.CoreCompileInputs.cache
+C:\Larcev\Univesity\Tyapaev\3\obj\Debug\3.exe
+C:\Larcev\Univesity\Tyapaev\3\obj\Debug\3.pdb
+C:\Larcev\Univesity\Tyapaev\3\bin\Debug\Fractions.dll
+C:\Larcev\Univesity\Tyapaev\3\bin\Debug\Fractions.xml
+C:\Larcev\Univesity\Tyapaev\3\obj\Debug\3.csproj.Up2Date
